@@ -19,7 +19,7 @@ jobs:
       - name: Use Deno
         uses: denolib/setup-deno@master
         with:
-          deno-version: v1.1.2
+          deno-version: v1.1.3
 
       # Check format
       - name: Check format of project
