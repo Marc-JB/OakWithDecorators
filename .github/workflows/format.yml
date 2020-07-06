@@ -1,0 +1,26 @@
+name: Deno check format
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-format:
+    runs-on: ubuntu-latest
+    steps:
+
+      # Checkout
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Set up Deno
+      - name: Use Deno
+        uses: denolib/setup-deno@master
+        with:
+          deno-version: v1.1.2
+
+      # Check format
+      - name: Check format of project
+        run: deno fmt --check
