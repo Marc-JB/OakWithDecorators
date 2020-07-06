@@ -1,6 +1,6 @@
 {
-    "recommendations": [
-        "denoland.vscode-deno",
-        "visualstudioexptteam.vscodeintellicode"
-    ]
+  "recommendations": [
+    "denoland.vscode-deno",
+    "visualstudioexptteam.vscodeintellicode"
+  ]
 }
