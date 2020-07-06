@@ -1,13 +1,13 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "deno: format",
-            "type": "shell",
-            "command": "deno fmt",
-            "problemMatcher": []
-        }
-    ]
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "deno: format",
+      "type": "shell",
+      "command": "deno fmt",
+      "problemMatcher": []
+    }
+  ]
 }

@@ -1,3 +1,5 @@
+[![Deno check format](https://github.com/Marc-JB/OakWithDecorators/workflows/Deno%20check%20format/badge.svg)](https://github.com/Marc-JB/OakWithDecorators/actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Marc-JB_OakWithDecorators&metric=alert_status)](https://sonarcloud.io/dashboard?id=Marc-JB_OakWithDecorators)
 [![license](https://badgen.net/github/license/Marc-JB/OakWithDecorators?color=cyan)](https://github.com/Marc-JB/OakWithDecorators/blob/main/LICENSE)
 # [WIP] Oak with decorators
 Experimental library for using Oak with decorators
