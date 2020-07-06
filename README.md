@@ -1,3 +1,4 @@
+[![Deno check format](https://github.com/Marc-JB/OakWithDecorators/workflows/Deno%20check%20format/badge.svg)](https://github.com/Marc-JB/OakWithDecorators/actions)
 [![license](https://badgen.net/github/license/Marc-JB/OakWithDecorators?color=cyan)](https://github.com/Marc-JB/OakWithDecorators/blob/main/LICENSE)
 # [WIP] Oak with decorators
 Experimental library for using Oak with decorators
