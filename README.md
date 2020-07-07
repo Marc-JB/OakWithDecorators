@@ -5,7 +5,7 @@
 Experimental library for using Oak with decorators
 
 ## Notes
-* You will have to add `// @ts-expect-error` every time you use decorators in Deno :(
+* Make sure to enable and set the `experimentalDecorators` flag to true in your custom `tsconfig.json` ([don't forget to pass that tsconfig to Deno](https://deno.land/manual/getting_started/typescript#custom-typescript-compiler-options))
 
 ## Decorators
 decorator | type | required | aliases | description
@@ -37,12 +37,10 @@ interface Pet {
 }
 
 @Endpoint("pets")
-// @ts-expect-error
 class PetsController {
   public constructor(private readonly petsList: Pet[]) {}
 
   @HttpGet
-  // @ts-expect-error
   public getAllPets({ response }: RouterContext): void {
     response.status = 200;
     response.body = JSON.stringify(this.petsList, undefined, 4);
@@ -50,7 +48,6 @@ class PetsController {
 
   @HttpGet
   @Path("/:id")
-  // @ts-expect-error
   public getPetById({ params, response }: RouterContext): void {
     const pet =
       this.petsList.find((it) => it.id == parseInt(params.id ?? "0")) ?? null;
